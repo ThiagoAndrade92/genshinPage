@@ -1,0 +1,141 @@
+/* Geral */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html,body {
+    height: 100%;
+    background-color: black ;
+    overflow: hidden;
+}
+
+.container {
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.opacity-titulo {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1s, transform 1s;
+}
+
+.opacity-subtexto {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1s, transform 1s;
+}
+
+.opacity-img {
+    opacity: 0;
+    transition-delay: 300ms;
+    transform: translateX(100%);
+    transition: opacity 1s, transform 1s;
+}
+
+.titulo.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.subtexto.show {
+    opacity: 1;
+    transition-delay: 1200ms;
+    transform: translateX(0);
+}
+
+#image.show {
+    opacity: 1;
+    transition-delay: 700ms;
+    transform: translateX(0);
+}
+
+.hidden {
+    display: none;
+}
+
+/* CABEÇALHO */
+#cabecalho {
+    z-index: 1;
+    width: 15vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.keqing {
+    background: url('../images/liyue.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.kazuha,
+.shogun {
+    background: url('../images/inazuma.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.nahida {
+    background: url('../images/sumero.jpeg') no-repeat center;
+    background-size: cover;
+}
+
+.neuvillette,
+.wriothesley {
+    background: url('../images/fontaine.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.img {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.img:hover {
+    opacity: .8;
+}
+/* ------------------------------------ */
+/* PRINCIPAL */
+#principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textos {
+    padding: 0 5%;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 50px;
+    color: goldenrod;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.514);
+    margin-bottom: 20px;
+}
+
+.subtexto {
+    text-align: justify;
+    font-size: 25px;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.384);
+    padding: 10px;
+}
+
+#image {
+    height: 800px;
+    padding: 0 1%;
+}
